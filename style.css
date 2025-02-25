@@ -1,0 +1,154 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+header img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff9800;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #222;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
+/* Main Sections */
+main {
+  text-align: center;
+  padding: 40px;
+}
+
+.welcome-msg-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-msg-section h1 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.welcome-msg-section img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.first-section,
+.second-section,
+.third-section {
+  margin-top: 40px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-section img,
+.second-section img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* CTA Button */
+a.cta {
+  display: inline-block;
+  padding: 14px 30px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 30%;
+  margin: 30px 35%;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+a.cta:hover {
+  background-color: #e68900;
+}

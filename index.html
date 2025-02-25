@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="style.css">
+    <title>Busness Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/9 (1).png" alt="Logo">
+      <span class="menu-toggle">&#9776;</span> <!-- Mobile menu button -->
+      <nav>
+        <a href="">Contact</a>
+        <a href="">Projects</a>
+        <a href="">Place Order</a>
+      </nav>
+    </header>
+      <div class="welcome-msg-section">
+        <h1> welcome to 99 Solutions web development services</h3>  
+        <img src="images/99.png" alt="welcome image">
+      </div> 
+      <div class="first-section">
+       
+        <p>At 99 Solutions Web Development Services,
+           we specialize in crafting innovative,
+            high-performance, 
+            and user-centric digital solutions tailored to meet the unique needs of businesses across industries.
+             As a team of passionate and skilled web developers,
+              we are committed to delivering cutting-edge websites and web applications that not only look stunning but also drive measurable results. 
+              Our mission is to empower businesses with robust, scalable, and future-proof digital platforms that enhance their online presence,
+               streamline operations, and foster growth.</p> 
+               <img src="images/IMG_20250221_044838.jpg" alt="">
+      </div> 
+      <div class="second-section">
+        
+        <p>With years of experience in the ever-evolving world of web development, we pride ourselves on staying ahead of the curve by leveraging the latest technologies, frameworks, and best practices.
+          From responsive design and seamless user experiences to complex backend systems and e-commerce solutions, we offer end-to-end web development services that cater to startups, small businesses, and enterprises alike.
+           Our expertise spans HTML, CSS, JavaScript, React, Angular, Node.js, PHP, and more, ensuring that every project is built with precision and efficiency.</p> 
+           <img src="images/IMG_20250221_044904.jpg" alt="">
+      </div> 
+      <div class="third-section">
+        <p>At 99 Solutions, we don’t just build websites—we build experiences that engage, inspire, and convert. Let us help you unlock the full potential of your online presence. Partner with us, and together, we’ll create digital solutions that set you apart in a competitive marketplace. Your success is our success, and we’re excited to be a part of your journey.</p>
+      </div> 
+      <a href="" class="cta">PLACE ORDER NOW !!!</a>
+    </main> 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("nav");
+    
+        menuToggle.addEventListener("click", function () {
+          nav.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
